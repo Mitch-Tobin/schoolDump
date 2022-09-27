@@ -2,33 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Calculator</title>
+    <title>PROG1123 Exercise Challenge</title>
 </head>
 <body>
-    
+
     <form>
+        <label>Type Your Sentence Here: </label>
+        <input type="text" id="txtSentence" size=100>
 
-        <!-- Text box and Check Box -->
-        <label>Canadian Dollar: </label>
-        <input type = "text" id = "txtTemp">
-     
-        <label for ="currencies"> Choose a currency: </label>
-        <!-- Drop Down Bar for different Currencies -->
-        <select name = "currencies" id = "currencies">
-            <option value = "0.76">US (Dollar)</option>
-            <option value = "0.66">GB (Pound)</option>
-            <option value = "0.76">EU (Euro)</option>
-        </select>
+        <br>
 
-        <!-- Button to Convert the temp-->
+        <label>Number of "Dog" Matches: </label>
+        <input type="number" id="dogMatchNbr" readonly>
 
-        <input type = "button" id = "btnConvert" value = "Convert">
+        <label>Number of "Cat" Matches: </label>
+        <input type="number" id="catMatchNbr" readonly>
 
-        <!-- Button to reset the convertor-->
+        <br>
 
-        <input type ="reset" id ="btnReset" value = "Clear">
+        <label>Number of Matches:</label>
+        <input type="number" id="numOfMatches" readonly>
+
+        <label>Sentence Length (Characters):</label>
+        <input type="number" id="numOfChars" readonly>
+
+
     </form>
+
+    <script src="Scripts/scripts.js"></script>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
 
 </body>
